@@ -1,13 +1,14 @@
-import { Text } from '@/shared/ui'
+import { Button, Text } from '@/shared/ui'
 import { View } from "react-native"
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 const Index = () => {
   return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-xl font-bold text-blue-500">
-        Welcome to Nativewind!
+    <SafeAreaView>
+      <Text>
+        Hello world
       </Text>
-    </View>
+    </SafeAreaView>
   )
 }
 

@@ -1,10 +1,10 @@
-const { hairlineWidth } = require( 'nativewind/theme' )
+const { hairlineWidth } = require('nativewind/theme')
 
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: 'class',
-  content: [ "./src/**/*.{js,jsx,ts,tsx}" ],
-  presets: [ require( 'nativewind/preset' ) ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  presets: [require('nativewind/preset')],
   theme: {
     extend: {
       colors: {
@@ -69,5 +69,6 @@ export default {
   future: {
     hoverOnlyWhenSupported: true,
   },
-  plugins: [ require( 'tailwindcss-animate' ) ],
+  plugins: [require('tailwindcss-animate')],
 }
+

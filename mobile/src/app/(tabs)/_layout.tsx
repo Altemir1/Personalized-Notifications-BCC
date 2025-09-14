@@ -18,6 +18,7 @@ const _layout = () => {
         name="products"
         options={{
           title: 'Products',
+          href: '/products',
           tabBarIcon: ( { color } ) => <Icon as={CreditCard} size={28} color={color} />,
         }}
       />

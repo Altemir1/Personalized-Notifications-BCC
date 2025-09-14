@@ -1,8 +1,7 @@
 import { ThemeProvider } from '@react-navigation/native'
 import { PortalHost } from '@rn-primitives/portal'
-import { SplashScreen, Stack } from "expo-router"
+import { Stack } from "expo-router"
 import { StatusBar } from 'expo-status-bar'
-import { useEffect } from 'react'
 import { NAV_THEME } from '@/shared/lib/theme'
 import { useColorScheme } from 'react-native'
 import '../global.css'
@@ -16,11 +15,12 @@ const RootLayout = () => {
       <Stack screenOptions={{
         headerShown: false
       }}>
-        <Stack.Screen name="index" />
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       </Stack>
       <PortalHost />
     </ThemeProvider>
   )
+
 }
 
 export default RootLayout
